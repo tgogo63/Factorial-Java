@@ -11,6 +11,7 @@ package factorial;
  */
 public class Factorial {
 
+	//Factorial Method to test for value n
     public static long factorial(long n) {
         if      (n <  0) throw new RuntimeException("Underflow error in factorial");
         else if (n > 20) throw new RuntimeException("Overflow error in factorial");
@@ -18,6 +19,7 @@ public class Factorial {
         else             return n * factorial(n-1);
     }
 
+    //Parse factorial arguments into long values
     public static void main(String[] args) {
         long n = Long.parseLong(args[0]);
         System.out.println(factorial(n));
